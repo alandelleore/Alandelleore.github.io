@@ -1,0 +1,69 @@
+[
+    {
+        "id" : 23,
+        "nombre": "Sintetizador Yamaha" ,
+        "detalle": "Sintetizador Mini Yamaha Reface Cs",
+        "color": "Blanco",
+        "precio": 91253,
+        "precioUnidad" : 91253,
+        "precio2":105000,
+        "imagen": "http://fotos.subefotos.com/30b68cc58f2a288139ae1168fe839483o.jpg",
+        "cantidad": 1
+        
+    },
+    {
+        "id" : 24,
+        "nombre": "Monitor Yamaha" ,
+        "detalle": "Monitores Activos Yamaha Hs8 Hs-8",
+        "color": "negro",
+        "precio": 145500,
+        "precioUnidad" : 145500,
+        "precio2":152000,
+        "imagen": "http://fotos.subefotos.com/cd0a85d27207f3d1923a8c78df977b8co.jpg",
+        "cantidad": 1
+    },
+    {
+        "id" : 25,
+        "nombre": "Placa de sonido Mackie" ,
+        "detalle": "Placa De Sonido Mackie Onyx Artist 12 2 Entradas 2 Salidas",
+        "color": "Negro",
+        "precio": 23900,
+        "precioUnidad" : 23900,
+        "precio2": 25100,
+        "imagen": "http://fotos.subefotos.com/9eb62afacded0f4658200ca4aa50c801o.jpg",
+        "cantidad": 1
+    },
+    {
+        "id" : 26,
+        "nombre": "Microfono Behringer" ,
+        "detalle": "Microfono Behringer C1 Condenser Cardioide",
+        "color": "Gris",
+        "precio": 13625,
+        "precioUnidad" : 13625,
+        "precio2": 15300,
+        "imagen": "http://fotos.subefotos.com/852f21e4ebe247780d30664ec2b94124o.jpg",
+        "cantidad": 1
+    },
+    {
+        "id" : 27,
+        "nombre": "Amplificador Marshall guitarra" ,
+        "detalle": "Amplificador Bajo Marshall Mb15 15w Compresor 2ch",
+        "color": "Negro",
+        "precio": 35900,
+        "precioUnidad" : 35900,
+        "precio2": 41250,
+        "imagen": "http://fotos.subefotos.com/1d8c47d2a90f8250ac452d33f28eec30o.jpg",
+        "cantidad": 1
+    },
+    {
+        "id" : 28,
+        "nombre": "Cuerdas Guitarra" ,
+        "detalle": "Encordado Ernie Ball 011 Electrica 2220",
+        "color": "-",
+        "precio": 1200,
+        "precioUnidad" : 1200,
+        "precio2": 1680,
+        "imagen": "http://fotos.subefotos.com/9f0fc79bfc4f7998da1a88adee6dba39o.jpg",
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="shortcut icon" href="images/iconbm.png">
+      <title>Black Market | Home</title>
+      <link rel="stylesheet" href="css/estilos.css">
+   </head>
+   <body>
+      <div class="container"> 
+         <header id="cabeceralogo">
+            <nav id="menuprincipal">
+               <ul class="seccion-menu">
+                  <li>
+                     <a href="#" >
+                        <img src="images/comprar.png"  id="carr" >
+                        <p id="cantidadCarr"></p>
+                     </a>
+                  </li>
+                  <li id="crearCuenta"><a href="#anclaje"  ><span>Crear cuenta</span></a></li>
+                  <li id="ingresar"><a href="#anclaje">Ingresá</a></li>
+                  <li id="listadoCategorias">
+                     <select onchange="seleccionCategorias2()" id="listadoResponsive">
+                        <option >Categorias..</option>
+                        <option value='guitarras'>Guitarras</option>
+                        <option value="bajos">Bajos</option>
+                        <option value="baterias">Baterias</option>
+                        <option value="teclados">Teclados</option>
+                        <option value="vientos">Vientos</option>
+                        <option value="percusión">Percusión</option>
+                        <option value="audio">Audio</option>
+                        <option value="accesorios">Accesorios</option>
+                     </select>
+                  </li>
+               </ul>
+               <div id="operaciones">
+                  <table class="tablaBase">
+                  </table>
+                  <br>
+                  <div id="total"></div>
+               </div>
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt=""></a> 
+               </div>
+               <div class="box" >
+                  <input type="search" class="src" id="buscar-1"   placeholder="Buscar.."  >
+                  <button id="btn-buscar" onclick="buscarProductos()">OK</button>
+               </div>
+            </nav>
+            <div id="relleno"></div>
+      </div>
+      </header>
+      <div class="contenedor">
+         <div class="atras botones">
+            &#60
+         </div>
+         <div class="adelante botones">
+            &#62
+         </div>
+         <img src="images/bannerprincipal.jpg" name="slider" id="imagen">
+      </div>
+      <div id="anclaje">
+      </div>
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="contenedorFormulario1">
+         <div id="formulario1" >
+            <legend>CREAR CUENTA</legend>
+            <form id="signup-form">
+               <label for="email" >Email</label>   
+               <input id="email" type="text"  required>
+               <label for="nombre">Nombre</label>
+               <input type="text" id="nombre1">
+               <label for="contraseña">Contraseña</label>
+               <input id="pass1" type="password"  required>
+               <button type="button" id="signup_btn" onclick="getData()">Enviar</button>
+            </form>
+         </div>
+      </div>
+      <div div id="contenedorFormulario2">
+         <div id="formulario2">
+            <legend>LOGIN</legend>
+            <form  id="login-form" >
+               <label for="email" >Email</label>
+               <input type="email" name="email" id="email2"  required />
+               <label for="contraseña">Contraseña</label>
+               <input type ="password" name="password" id="pass2" />
+               <button type="button" id="login_btn"  onclick="validarData()">Enviar</button>
+            </form>
+         </div>
+      </div>
+      
+      <div id="main"> </div>
+
+      <div id="myModal" class="modal">
+         <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+         <img class="modal-content" id="img01">
+      </div>
+
+      <div class="principal" id="product-list" >
+      <div class="contenedor-card" id="cuadro" >
+      </div>
+      
+      <div class="colum-izq">
+         <ul id="seccionCategorias">
+            <h3>Categorias</h3>
+            <li><input type="radio" name="cate" id="guitar"><label for="guitar"> Guitarras</label></li>
+            <li ><input type="radio" name="cate" id="bajos"><label for="bajos"> Bajos</label></li>
+            <li ><input type="radio" name="cate" id="baterias"><label for="baterias"> Baterias</label></li>
+            <li ><input type="radio" name="cate" id="teclados"><label for="teclados"> Teclados</label></li>
+            <li ><input type="radio" name="cate" id="vientos"><label for="vientos"> Vientos</label></li>
+            <li ><input type="radio" name="cate" id="percusión"><label for="percusión"> Percusión</label></li>
+            <li ><input type="radio" name="cate" id="audio"><label for="audio"> Audio</label></li>
+            <li ><input type="radio" name="cate" id="accesorios"><label for="accesorios"> Accesorios</label></li>
+            <br>
+            <h3>Precios</h3>
+            <input type="range" name="price" id="price" min="300" max="800500" step="100" value="255">
+            <li>Max.  $<output class="price-output" for="price"></output></li>
+         </ul>
+         <img src="" alt="">
+      </div>
+
+      <footer>
+         <div id="footer">
+            <section class="seccionpie" >
+               <address>Delle Ore Alan.</address>
+               <small>&copy; Dim Mac 2021</small>
+            </section>
+      </footer>
+
+      </div>
+      <div class="recuperar"></div>
+      <script src="js/jquery.js"></script>
+      <script src="js/login.js"></script>
+      <script src="js/script2.js"></script>
+   </body>
+</html>

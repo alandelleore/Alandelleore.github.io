@@ -1,0 +1,839 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f5efef;
+}
+
+#relleno {
+    height: 120px;
+}
+
+
+
+#menuprincipal {
+    height: 150px;
+    width: 100%;
+}
+
+#img_cabecera img {
+    width: 100%;
+    height: auto;
+}
+#cantidadCarr {
+    position:static;
+    margin-top: -43px;
+    margin-right: 9px;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 100;
+}
+
+#menuprincipal{
+    display: block;
+    position: fixed;
+    width: 96%;
+    height: 120px;
+    padding: 0% 2%;
+    background-color: #ffffff;
+    text-align: right;
+    z-index: 1;
+    box-shadow: 0px 2px 5px -2px #D8D8D8; 
+}
+
+#menuprincipal ul li {
+    display: inline-block;
+    float: right;
+    height: 35px;
+    padding: 15px 10px 30px 10px;
+    margin-right: 5px;
+    margin-top: 70px; 
+}
+
+#menuprincipal a:hover{
+    color: #e94e1b;
+}
+
+#menuprincipal a{
+    font: bold 14px arial, sans-serif;
+    color: #777777;
+    text-decoration: none;
+}
+
+#menuprincipal ul li img {
+    margin-top: -18px;
+    width: 40px;
+}
+
+.box {
+    position: absolute;
+    top: 12%;
+    left: 16%;
+}
+
+input.src {
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #444;
+    background: #fff url("../images/search-icon.png") no-repeat 9px center;
+    width: 340px;
+    transition: all .5s;
+}
+
+#cabeceralogo img{
+    width: 100%;
+    height: auto; 
+}
+
+#cabeceralogo .logo img{
+    display: block;
+    margin-top: 15px;
+    float: left;
+    width: 80px;  
+    position: fixed;
+}
+
+.colum-izq {
+    width: 25%;
+    height: auto;
+    margin: 10px 10px 10px 0;
+    display: block;
+    float: right;
+}
+.colum-izq h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222121;
+    margin: 10px 0 10px 10px;
+    display: block;
+}
+.colum-izq ul li {
+    display: block;
+    margin: 10px 0 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #575756;
+}
+
+.seccionpie{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #131212;
+    color: #fff;
+}
+
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #e94e1b;
+}
+
+#cuadro h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #e94e1b;
+    margin-top: 100px; 
+}
+
+
+.contenedor-card{
+    width: 72%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 5px 10px 10px;
+    float: left;
+}
+
+.contenedor-card .card{
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contenedor-card .card img{
+    width: 90%;
+    height: auto;
+    margin: 15px 0 15px 0;  
+    border-bottom: solid grey 1px;
+    cursor: pointer;
+}
+
+.contenedor-card .card p{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #575756;   
+}
+
+.contenedor-card .card h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #e94e1b;
+}
+.contenedor-card .card h5{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 17px;
+    color: #312f2f;
+    text-decoration: line-through;
+}
+
+
+.contenedor-card .card:hover{
+    -moz-box-shadow: -2px 11px 18px #757075;
+    -webkit-box-shadow: -2px 11px 18px #757075;
+    box-shadow: -2px 11px 18px #757075;
+}
+#contenedorFormulario1, #contenedorFormulario2 {
+    display: block;
+    width: 100%;
+    background-image: url(../images/guitar-banner-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#formulario1 {
+    display: none;
+}
+#formulario2 {
+    display: none;
+}
+form{
+    width:20%;
+    height: auto;
+    padding:10px;
+    margin: 10PX;
+    position: relative;
+    left: 70%;
+}
+
+form label{
+    width: 30%;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fffffe;    
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    outline:rgb(0, 0, 0);
+    font-size: 16px;
+    color: #999;
+    margin:8px 0;
+    border: 1px solid #dddddd;
+    border-radius: 6px;  
+}
+
+form button[type="button"]{
+    width:80px;
+    padding:8px 16px;
+    margin-top:2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display:block;
+    color:#fff;
+    background-color:rgb(0, 0, 0);
+} 
+
+form button[type="button"]:hover{
+    cursor:pointer;
+}
+
+#btn-buscar{
+    width: 50px;
+    height: 43px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin:8px -5px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color:#fff;
+    background-color:rgb(0, 0, 0);
+    border-top: solid black 1px;
+    border-left: solid black 1px ;
+    font-size: 18px;
+}
+
+.btn-buy  {
+    width: 30%;
+    position: relative;
+    background-color: #110a0a;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btn-buy:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn-buy:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+#imagen{
+    width: 100%;
+    height: 100%; 
+}
+
+.contenedor{
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px);
+}
+
+#operaciones {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(236, 229, 232);
+}
+#operaciones #mensaje {
+    margin-right: 100px;  
+}
+#operaciones p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+    margin: 10px 25px 10px 0;
+    font-size: 0.8em;
+    color: #504d4d; 
+    display: inline-block;
+}
+
+#operaciones span{
+    width: 15px;
+    font-size: 22px;
+    font-weight: bolder;  
+}
+#operaciones h4, h5 , h2 {
+    margin: 10px 20px 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #504d4d; 
+    display: inline-block;
+}
+
+#operaciones img {
+    display: inline-block;
+    width: 40%;
+    border-radius: 8px;
+    margin-right: 35%;
+}
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #414040;
+    text-align: center;   
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tablaBase{
+    margin: 10px 15px 10px 15px;
+    width: 90%;
+    height: auto;    
+}
+
+#eliminarCarrito {
+    margin-right: 10px;
+    width:10% !important;
+    cursor: pointer;     
+}
+
+#operaciones h2 {
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #da470d;
+}
+
+#total h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #da470d;
+}
+
+#seccionCategorias {
+    display: block;
+    position: relative;
+    top: 30px;
+    margin-left: 50px;   
+}
+
+#seccionCategorias li  {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-align: initial;
+}
+
+#seccionCategorias h3{
+    display: block;
+    position: relative;
+    font-size: 22px;
+    text-align: initial; 
+}
+
+#seccionCategorias input[type="radio"] {
+    cursor: pointer;
+}
+#seccionCategorias label {
+    cursor: pointer;
+}
+
+.price-output {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #414040;
+    font-size: 15px;
+} 
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.534); 
+    background-color: rgba(0, 0, 0, 0.527); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    background-color: rgb(3, 3, 3);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ 
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.btn-menos {
+    margin-right: 15px;
+    cursor: pointer;    
+}
+.btn-mas {
+    margin-left: 15px;
+    cursor: pointer;    
+}
+
+.cantidad {
+    margin-right: 75px !important;    
+}
+#listadoCategorias {
+    display: none !important;
+}
+
+
+@media (max-width: 1002px) {
+
+    #operaciones {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        display: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(236, 229, 232);
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 60%;
+        background-color: rgb(3, 3, 3);
+    }
+}
+
+@media (max-width: 822px) {
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 70%;
+        background-color: rgb(3, 3, 3);
+    }
+    #listadoCategorias {
+        display: none !important;
+    }
+    .colum-izq {
+        width: 20%;
+        height: auto;
+        margin-right: 30px;
+        display: block;
+        float: left; 
+    }
+    #cabeceralogo .logo img{
+        display: block;
+        margin-top: 20px;
+        float: left;
+        width: 12%;  
+        min-width: 8%;
+        position: fixed;
+    }
+   
+    .box {
+        position: absolute;
+        top: 25%;
+        left: 16%;
+        margin-left: 30px;
+    }
+
+    
+    form{
+        width:25%;
+        height: auto;
+        padding:5px;
+        position: relative;
+        left: 70%;
+        padding-bottom: 20px;
+    }
+    
+    form label{
+        width:90px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #fffffe;    
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"]{
+        width: 100%;
+        height: auto;
+        padding: 3px;
+        outline:rgb(0, 0, 0);
+        font-size: 13px;
+        color: #999;
+        margin:8px 0;
+        border: 1px solid #dddddd;  
+    }
+    form button[type="button"]{
+        width:75px;
+        padding:3px;
+        margin-top:2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display:block;
+        color:#fff;
+        background-color:rgb(0, 0, 0);
+    }
+}
+@media (max-width: 775px) {
+
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.534); 
+        background-color: rgba(0, 0, 0, 0.527); 
+    }
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 70%;
+        background-color: rgb(3, 3, 3);
+    }
+    
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .colum-izq {
+        width: 35%;
+        height: auto;
+        margin-right: 30px;
+        display: flex;
+        position: relative;
+        top: 50%;  
+    }
+    .contenedor-card{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 5px 10px 10px;
+        position: relative;  
+    }
+    #listadoCategorias {
+        display: inline-block !important;
+    }
+    input.src {
+        padding: 9px 10px 9px 32px;
+        outline: none;
+        font-size: 18px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: #444;
+        background: #fff url("../images/search-icon.png") no-repeat 9px center;
+        width: 200px;
+        transition: all .5s;
+    }
+    .seccion-menu{
+        margin-top: 20px;
+    }
+    .botones{
+    margin-top: 40px;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    }
+    #seccionCategorias {
+        display: none;
+    }
+    #menuprincipal{
+        height: 140px;
+    }
+    #relleno {
+        height: 140px;
+    }
+    #operaciones {
+        width: 75%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 140px;
+        display: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(236, 229, 232);
+    }
+    #contenedorFormulario1, #contenedorFormulario2 {
+        display: block;
+        width: 100%;
+        background-image: url(../images/guitar-banner-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+    form{
+        width:25%;
+        height: auto;
+        padding:5px;
+        position: relative;
+        left: 38%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    #operaciones p {
+        margin: 0;
+    }
+    #operaciones {
+        width: 85%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 140px;
+        display: none;
+    }
+    #eliminarCarrito {
+        margin-left: 20px;
+        width: 15% !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #operaciones p {
+        margin: 0;
+    }
+
+    .cantidad {
+        margin-right: 0 !important;
+    }
+    
+    form button[type="button"]{
+        width:70px;
+        padding:8px 16px;
+        margin-top:2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display:block;
+        color:#fff;
+        background-color:rgb(0, 0, 0);
+    } 
+    
+    #seccionCategorias {
+        display: block;
+        position: relative;
+        top: 2px;
+        margin-left: 50px;  
+    }
+    #operaciones {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 130px;
+        display: none;
+    }
+    #operaciones p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 10;
+        margin: 10px 25px 10px 0;
+        font-size: 0.6em;
+        color: #504d4d; 
+        display: inline-block;
+    }
+    
+    #operaciones span{
+        width: 15px;
+        font-size: 22px;
+        font-weight: bolder;   
+    }
+    #operaciones h4, h5 , h2 {
+        margin: 10px 20px 10px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        color: #504d4d; 
+        display: inline-block;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 90%;
+    }
+    #menuprincipal ul li {
+        display: inline-block;
+        height: 35px;
+        padding: 30;
+        margin-right: 5px;
+        margin-top: 70px;
+    }
+}
+
+
