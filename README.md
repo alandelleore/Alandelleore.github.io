@@ -1,7 +1,7 @@
 # BLACKMARKET
 Proyecto Final E-commerce JavaScript - CODERHOUSE
 Primer trabajo realizado en JavaScript como parte de la entraga final del curso para la plataforma CODERHOUSE.
-Blackmarket es una tienda de instrumentos musicales, presenta un carrito de compras donde se pueden ir sumando articulos, un buscador y un filtro por precio de los mismos.
+Blackmarket es una tienda de instrumentos musicales, presenta un carrito de compras donde se pueden ir sumando articulos, un buscador y un filtro por precio/categoria de los mismos.
 
 https://blackmarcket.netlify.app/
 
